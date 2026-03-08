@@ -28,7 +28,7 @@ const Download = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Download className="mx-auto mb-4 h-12 w-12" />
+            <DownloadIcon className="mx-auto mb-4 h-12 w-12" />
             <h1 className="mb-3 font-display text-4xl font-bold md:text-5xl">
               Download Pokerstr8ts
             </h1>
@@ -188,13 +188,13 @@ const Download = () => {
             >
               <Card className="border-2 border-primary/30 bg-primary/5">
                 <CardContent className="flex flex-col items-center gap-4 p-8 text-center sm:flex-row sm:text-left">
-                  <Download className="h-12 w-12 shrink-0 text-primary" />
+                  <DownloadIcon className="h-12 w-12 shrink-0 text-primary" />
                   <div className="flex-1">
                     <h3 className="mb-1 font-display text-xl font-bold text-foreground">Ready to play?</h3>
                     <p className="text-sm text-muted-foreground">Download Pokerstr8ts free for Windows. No account required.</p>
                   </div>
                   <Button size="lg" className="font-display text-base shrink-0">
-                    <Download className="mr-2 h-5 w-5" /> Download Now
+                    <DownloadIcon className="mr-2 h-5 w-5" /> Download Now
                   </Button>
                 </CardContent>
               </Card>
