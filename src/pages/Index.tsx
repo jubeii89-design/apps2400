@@ -161,9 +161,11 @@ const Index = () => {
             <Download className="mx-auto mb-4 h-12 w-12 text-primary" />
             <h2 className="mb-3 font-display text-3xl font-bold">Download Pokerstr8ts Free</h2>
             <p className="mb-6 text-muted-foreground">Get the standalone Pokerstr8ts game for free and start playing on your computer today!</p>
-            <Button size="lg" className="font-display text-lg">
-              <Download className="mr-2 h-5 w-5" /> Download Now
-            </Button>
+            <Link to="/download">
+              <Button size="lg" className="font-display text-lg">
+                <Download className="mr-2 h-5 w-5" /> Download Now
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

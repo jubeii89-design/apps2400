@@ -15,6 +15,7 @@ const navLinks = [
   { label: "Charity", path: "/charity" },
   { label: "Contact", path: "/contact" },
   { label: "FAQ", path: "/faq" },
+  { label: "Download", path: "/download" },
 ];
 
 const Navbar = () => {
