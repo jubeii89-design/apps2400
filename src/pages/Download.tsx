@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Download, Heart, CreditCard, Building2, Receipt, HandHeart, ChevronDown } from "lucide-react";
+import { Download as DownloadIcon, Heart, CreditCard, Building2, Receipt, HandHeart, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
