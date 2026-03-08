@@ -1,23 +1,25 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Index from "./pages/Index";
-import BoardGames from "./pages/BoardGames";
-import OnlineGames from "./pages/OnlineGames";
-import Tournaments from "./pages/Tournaments";
-import BuyGames from "./pages/BuyGames";
-import Partnerships from "./pages/Partnerships";
-import Charity from "./pages/Charity";
-import Reserve from "./pages/Reserve";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Contact from "./pages/Contact";
-import FAQ from "./pages/FAQ";
-import DownloadPage from "./pages/Download";
-import NotFound from "./pages/NotFound";
+
+const Index = lazy(() => import("./pages/Index"));
+const BoardGames = lazy(() => import("./pages/BoardGames"));
+const OnlineGames = lazy(() => import("./pages/OnlineGames"));
+const Tournaments = lazy(() => import("./pages/Tournaments"));
+const BuyGames = lazy(() => import("./pages/BuyGames"));
+const Partnerships = lazy(() => import("./pages/Partnerships"));
+const Charity = lazy(() => import("./pages/Charity"));
+const Reserve = lazy(() => import("./pages/Reserve"));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
+const Contact = lazy(() => import("./pages/Contact"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const DownloadPage = lazy(() => import("./pages/Download"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -28,22 +30,24 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Layout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/board-games" element={<BoardGames />} />
-            <Route path="/online-games" element={<OnlineGames />} />
-            <Route path="/tournaments" element={<Tournaments />} />
-            <Route path="/buy-games" element={<BuyGames />} />
-            <Route path="/partnerships" element={<Partnerships />} />
-            <Route path="/charity" element={<Charity />} />
-            <Route path="/reserve" element={<Reserve />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/download" element={<DownloadPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<div className="flex items-center justify-center min-h-[60vh]"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" /></div>}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/board-games" element={<BoardGames />} />
+              <Route path="/online-games" element={<OnlineGames />} />
+              <Route path="/tournaments" element={<Tournaments />} />
+              <Route path="/buy-games" element={<BuyGames />} />
+              <Route path="/partnerships" element={<Partnerships />} />
+              <Route path="/charity" element={<Charity />} />
+              <Route path="/reserve" element={<Reserve />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/download" element={<DownloadPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </Layout>
       </BrowserRouter>
     </TooltipProvider>
