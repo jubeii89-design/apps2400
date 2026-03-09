@@ -11,6 +11,7 @@ const BoardGames = lazy(() => import("./pages/BoardGames"));
 const GameDetail = lazy(() => import("./pages/GameDetail"));
 const OnlineGames = lazy(() => import("./pages/OnlineGames"));
 const OnlineGameDetail = lazy(() => import("./pages/OnlineGameDetail"));
+const Leaderboards = lazy(() => import("./pages/Leaderboards"));
 const Tournaments = lazy(() => import("./pages/Tournaments"));
 const BuyGames = lazy(() => import("./pages/BuyGames"));
 const Partnerships = lazy(() => import("./pages/Partnerships"));
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/board-games/:gameId" element={<GameDetail />} />
               <Route path="/online-games" element={<OnlineGames />} />
               <Route path="/online-games/:gameId" element={<OnlineGameDetail />} />
+              <Route path="/leaderboards" element={<Leaderboards />} />
               <Route path="/tournaments" element={<Tournaments />} />
               <Route path="/buy-games" element={<BuyGames />} />
               <Route path="/partnerships" element={<Partnerships />} />

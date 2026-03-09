@@ -22,7 +22,7 @@ const OnlineGames = () => (
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
             <span className="flex items-center gap-2"><Gamepad2 className="h-5 w-5" /> Play Anytime</span>
             <span className="flex items-center gap-2"><Globe className="h-5 w-5" /> Global Players</span>
-            <span className="flex items-center gap-2"><Users className="h-5 w-5" /> Leaderboards</span>
+            <Link to="/leaderboards" className="flex items-center gap-2 hover:text-white transition-colors"><Users className="h-5 w-5" /> Leaderboards</Link>
           </div>
         </motion.div>
       </div>
