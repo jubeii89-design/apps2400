@@ -10,7 +10,7 @@ type CartItem = { id: number; name: string; price: number; qty: number };
 
 const products = [
   { id: 1, name: "Pokerstr8ts Deluxe", price: 39.99, desc: "The complete Pokerstr8ts experience with premium components.", color: "bg-primary" },
-  { id: 2, name: "Battle Grid", price: 49.99, desc: "Tactical strategy game with modular board pieces.", color: "bg-secondary" },
+  { id: 2, name: "CrossWord Pyramids", price: 49.99, desc: "Strategic word-building game with pyramid formations.", color: "bg-secondary" },
   { id: 3, name: "Treasure Hunt Family", price: 29.99, desc: "Fun for all ages — the perfect family game night starter.", color: "bg-accent" },
   { id: 4, name: "Word Wizard Pro", price: 24.99, desc: "Competitive word game with advanced rule variants.", color: "bg-game-purple" },
   { id: 5, name: "Galaxy Quest Expansion", price: 19.99, desc: "Expand your Galaxy Quest with new planets and missions.", color: "bg-game-teal" },
