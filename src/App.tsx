@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 
 const Index = lazy(() => import("./pages/Index"));
 const BoardGames = lazy(() => import("./pages/BoardGames"));
+const GameDetail = lazy(() => import("./pages/GameDetail"));
 const OnlineGames = lazy(() => import("./pages/OnlineGames"));
 const Tournaments = lazy(() => import("./pages/Tournaments"));
 const BuyGames = lazy(() => import("./pages/BuyGames"));
@@ -34,6 +35,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/board-games" element={<BoardGames />} />
+              <Route path="/board-games/:gameId" element={<GameDetail />} />
               <Route path="/online-games" element={<OnlineGames />} />
               <Route path="/tournaments" element={<Tournaments />} />
               <Route path="/buy-games" element={<BuyGames />} />
