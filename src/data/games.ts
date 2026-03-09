@@ -66,7 +66,7 @@ export const games: Game[] = [
     duration: "30-60 min",
     rating: 4.5,
     desc: "Build words in pyramid formations to score big.",
-    image: "/placeholder.svg",
+    color: "bg-secondary",
     reviews: 87,
     price: 39.99,
     longDesc: "CrossWord Pyramids is a strategic word-building game where players form words in ascending pyramid tiers. Each tier requires longer words, and overlapping letters score bonus points. Combine vocabulary skills with spatial strategy to outwit your opponents.\n\nWith solo puzzle challenges and competitive multiplayer modes, CrossWord Pyramids delivers a fresh twist on classic word games. The premium letter tiles and pyramid board create an engaging tabletop experience.",
