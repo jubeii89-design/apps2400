@@ -39,6 +39,27 @@ const Download = () => {
         </div>
       </section>
 
+      <div className="container mx-auto px-4 pt-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <Card className="border-2 border-primary/30 bg-primary/5">
+            <CardContent className="flex flex-col items-center gap-4 p-8 text-center sm:flex-row sm:text-left">
+              <DownloadIcon className="h-12 w-12 shrink-0 text-primary" />
+              <div className="flex-1">
+                <h3 className="mb-1 font-display text-xl font-bold text-foreground">Ready to play?</h3>
+                <p className="text-sm text-muted-foreground">Download Pokerstr8ts free for Windows. No account required.</p>
+              </div>
+              <Button size="lg" className="font-display text-base shrink-0">
+                <DownloadIcon className="mr-2 h-5 w-5" /> Download Now
+              </Button>
+            </CardContent>
+          </Card>
+        </motion.div>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Left column — Donation */}
@@ -179,26 +200,6 @@ const Download = () => {
               </CardContent>
             </Card>
 
-            {/* Download CTA below donation */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-8"
-            >
-              <Card className="border-2 border-primary/30 bg-primary/5">
-                <CardContent className="flex flex-col items-center gap-4 p-8 text-center sm:flex-row sm:text-left">
-                  <DownloadIcon className="h-12 w-12 shrink-0 text-primary" />
-                  <div className="flex-1">
-                    <h3 className="mb-1 font-display text-xl font-bold text-foreground">Ready to play?</h3>
-                    <p className="text-sm text-muted-foreground">Download Pokerstr8ts free for Windows. No account required.</p>
-                  </div>
-                  <Button size="lg" className="font-display text-base shrink-0">
-                    <DownloadIcon className="mr-2 h-5 w-5" /> Download Now
-                  </Button>
-                </CardContent>
-              </Card>
-            </motion.div>
           </div>
 
           {/* Right column — About */}
