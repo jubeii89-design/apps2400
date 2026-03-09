@@ -18,7 +18,7 @@ const BoardGames = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: i * 0.08 }}
         >
-          <Link to={`/board-games/${game.id}`}>
+          <Link to="/buy-games">
             <Card className="group cursor-pointer overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
               <div className={`${game.color} flex h-44 items-center justify-center`}>
                 <Dice5 className="h-16 w-16 text-white/40 transition-transform group-hover:scale-110 group-hover:rotate-12" />
