@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur-lg">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+      <div className="container mx-auto flex items-center justify-between px-4 py-1.5">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
             <Dice5 className="h-6 w-6 text-primary-foreground" />
