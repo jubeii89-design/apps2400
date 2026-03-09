@@ -35,12 +35,12 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-0 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-muted ${
+              className={`rounded-lg px-2 py-1.5 text-sm font-medium transition-colors hover:bg-muted ${
                 location.pathname === link.path
                   ? "bg-primary/10 text-primary"
                   : "text-muted-foreground"
