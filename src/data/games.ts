@@ -63,7 +63,7 @@ export const games: Game[] = [
     tags: ["Strategy", "Words", "Puzzle"],
     players: "2-4",
     age: "10+",
-    time: "30-60 min",
+    duration: "30-60 min",
     rating: 4.5,
     desc: "Build words in pyramid formations to score big.",
     image: "/placeholder.svg",
