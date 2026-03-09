@@ -34,7 +34,7 @@ const Reserve = () => {
               <SelectTrigger><SelectValue placeholder="Select a Game" /></SelectTrigger>
               <SelectContent>
                 <SelectItem value="pokerstr8ts">Pokerstr8ts Deluxe</SelectItem>
-                <SelectItem value="battlegrid">Battle Grid</SelectItem>
+                <SelectItem value="crosswordpyramids">CrossWord Pyramids</SelectItem>
                 <SelectItem value="treasure">Treasure Hunt Family</SelectItem>
                 <SelectItem value="wordwizard">Word Wizard Pro</SelectItem>
                 <SelectItem value="galaxy">Galaxy Quest</SelectItem>
