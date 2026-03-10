@@ -23,7 +23,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b bg-card/80 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-1.5">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
