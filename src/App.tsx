@@ -14,6 +14,7 @@ const OnlineGameDetail = lazy(() => import("./pages/OnlineGameDetail"));
 const Leaderboards = lazy(() => import("./pages/Leaderboards"));
 const Tournaments = lazy(() => import("./pages/Tournaments"));
 const BuyGames = lazy(() => import("./pages/BuyGames"));
+const BuyGameDetail = lazy(() => import("./pages/BuyGameDetail"));
 const Partnerships = lazy(() => import("./pages/Partnerships"));
 const Charity = lazy(() => import("./pages/Charity"));
 const Reserve = lazy(() => import("./pages/Reserve"));
