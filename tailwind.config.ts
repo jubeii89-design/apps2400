@@ -15,8 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Fredoka", "sans-serif"],
-        body: ["Rajdhani", "sans-serif"],
-        pixel: ['"Press Start 2P"', "monospace"],
+        body: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -55,9 +54,6 @@ export default {
         "game-purple": "hsl(var(--game-purple))",
         "game-pink": "hsl(var(--game-pink))",
         "game-teal": "hsl(var(--game-teal))",
-        "neon-green": "hsl(var(--neon-green))",
-        "neon-yellow": "hsl(var(--neon-yellow))",
-        "neon-orange": "hsl(var(--neon-orange))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -83,20 +79,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "flicker": {
-          "0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%": { opacity: "0.99" },
-          "20%, 21.999%, 63%, 63.999%, 65%, 69.999%": { opacity: "0.4" },
-        },
-        "pulse-neon": {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.7" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "flicker": "flicker 3s linear infinite",
-        "pulse-neon": "pulse-neon 2s ease-in-out infinite",
       },
     },
   },
