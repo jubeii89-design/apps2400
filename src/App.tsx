@@ -44,6 +44,7 @@ const App = () => (
               <Route path="/leaderboards" element={<Leaderboards />} />
               <Route path="/tournaments" element={<Tournaments />} />
               <Route path="/buy-games" element={<BuyGames />} />
+              <Route path="/buy-games/:gameId" element={<BuyGameDetail />} />
               <Route path="/partnerships" element={<Partnerships />} />
               <Route path="/charity" element={<Charity />} />
               <Route path="/reserve" element={<Reserve />} />
