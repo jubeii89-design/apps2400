@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShoppingCart, Plus, Minus, X, Dice5 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -103,21 +104,23 @@ const BuyGames = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.08 }}
           >
-            <Card className="group overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-              <div className={`${product.color} flex h-44 items-center justify-center`}>
-                <Dice5 className="h-16 w-16 text-white/40 transition-transform group-hover:scale-110" />
-              </div>
-              <CardContent className="p-5">
-                <h3 className="mb-1 font-display text-lg font-semibold">{product.name}</h3>
-                <p className="mb-3 text-sm text-muted-foreground">{product.desc}</p>
-                <div className="flex items-center justify-between">
-                  <span className="font-display text-xl font-bold text-primary">${product.price.toFixed(2)}</span>
-                  <Button size="sm" onClick={() => addToCart(product)}>
-                    <ShoppingCart className="mr-1 h-4 w-4" /> Add to Cart
-                  </Button>
+            <Link to={`/buy-games/${product.id === 1 ? "pokerstr8ts" : product.id === 2 ? "crossword-pyramids" : product.id === 3 ? "treasure-hunt" : product.id === 4 ? "word-wizard" : product.id === 5 ? "galaxy-quest" : "dice-derby"}`}>
+              <Card className="group overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+                <div className={`${product.color} flex h-44 items-center justify-center`}>
+                  <Dice5 className="h-16 w-16 text-white/40 transition-transform group-hover:scale-110" />
                 </div>
-              </CardContent>
-            </Card>
+                <CardContent className="p-5">
+                  <h3 className="mb-1 font-display text-lg font-semibold">{product.name}</h3>
+                  <p className="mb-3 text-sm text-muted-foreground">{product.desc}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="font-display text-xl font-bold text-primary">${product.price.toFixed(2)}</span>
+                    <Button size="sm" onClick={(e) => { e.preventDefault(); addToCart(product); }}>
+                      <ShoppingCart className="mr-1 h-4 w-4" /> Add to Cart
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </motion.div>
         ))}
       </div>
