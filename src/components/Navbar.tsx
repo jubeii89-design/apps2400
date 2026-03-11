@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Home", path: "/" },
-  { label: "Board Games", path: "/board-games" },
+  { label: "Games Night", path: "/board-games" },
   { label: "Online Games", path: "/online-games" },
   { label: "Tournaments", path: "/tournaments" },
   { label: "Reserve A Game", path: "/reserve" },
