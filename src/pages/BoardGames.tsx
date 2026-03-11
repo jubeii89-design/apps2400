@@ -112,8 +112,7 @@ const BoardGames = () => (
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-display text-base"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-display text-base"
             >
               <Building2 className="mr-2 h-5 w-5" /> Become a Host
             </Button>
