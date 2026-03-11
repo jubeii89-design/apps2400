@@ -125,9 +125,9 @@ const BoardGames = () => (
     <section className="border-b bg-card">
       <div className="container mx-auto grid grid-cols-2 gap-4 px-4 py-6 md:grid-cols-4">
         {[
-          { icon: Calendar, label: "Weekly Events", value: "3+" },
-          { icon: MapPin, label: "Venues", value: "6" },
-          { icon: Users, label: "Monthly Players", value: "250+" },
+          { icon: Calendar, label: "Weekly Events", value: "2" },
+          { icon: MapPin, label: "Venues", value: "2" },
+          { icon: Users, label: "Monthly Players", value: "35+" },
           { icon: Trophy, label: "Games Available", value: String(games.length) },
         ].map(({ icon: Icon, label, value }) => (
           <div key={label} className="flex items-center gap-3 justify-center">
