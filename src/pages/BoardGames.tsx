@@ -176,12 +176,6 @@ const BoardGames = () => (
                     <Sparkles className="mr-1 h-3 w-3" /> Featured
                   </Badge>
                 )}
-                <div className="absolute bottom-3 right-3 rounded-lg bg-card/90 px-3 py-1.5 text-xs font-semibold backdrop-blur-sm">
-                  <span className={event.spotsLeft <= 5 ? "text-destructive" : "text-secondary"}>
-                    {event.spotsLeft} spots left
-                  </span>{" "}
-                  / {event.spots}
-                </div>
               </div>
 
               <CardContent className="p-5">
