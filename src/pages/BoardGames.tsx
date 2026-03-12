@@ -208,10 +208,6 @@ const BoardGames = () => (
                     ))}
                   </div>
                 </div>
-
-                <Button className="w-full font-display" size="sm">
-                  Reserve a Spot <ChevronRight className="ml-1 h-4 w-4" />
-                </Button>
               </CardContent>
             </Card>
           </motion.div>
