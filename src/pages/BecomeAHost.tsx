@@ -65,7 +65,29 @@ const testimonials = [
 
 const BecomeAHost = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({ name: "", email: "", venueName: "", venueAddress: "", message: "" });
   const navigate = useNavigate();
+  const { toast } = useToast();
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.email || !formData.venueName) {
+      toast({ title: "Please fill in all required fields", variant: "destructive" });
+      return;
+    }
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-host-application", {
+        body: formData,
+      });
+      if (error) throw error;
+      setSubmitted(true);
+    } catch (err: any) {
+      toast({ title: "Something went wrong", description: err.message, variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
