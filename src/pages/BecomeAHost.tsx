@@ -18,6 +18,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const benefits = [
   {
@@ -63,7 +65,29 @@ const testimonials = [
 
 const BecomeAHost = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({ name: "", email: "", venueName: "", venueAddress: "", message: "" });
   const navigate = useNavigate();
+  const { toast } = useToast();
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.email || !formData.venueName) {
+      toast({ title: "Please fill in all required fields", variant: "destructive" });
+      return;
+    }
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-host-application", {
+        body: formData,
+      });
+      if (error) throw error;
+      setSubmitted(true);
+    } catch (err: any) {
+      toast({ title: "Something went wrong", description: err.message, variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -212,34 +236,35 @@ const BecomeAHost = () => {
                 <CardContent className="space-y-4 p-6">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium text-foreground">Your Name</label>
-                      <Input placeholder="Jane Smith" />
+                      <label className="mb-1.5 block text-sm font-medium text-foreground">Your Name *</label>
+                      <Input placeholder="Jane Smith" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                     </div>
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium text-foreground">Email</label>
-                      <Input type="email" placeholder="jane@venue.com" />
+                      <label className="mb-1.5 block text-sm font-medium text-foreground">Email *</label>
+                      <Input type="email" placeholder="jane@venue.com" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                     </div>
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-foreground">Business / Venue Name</label>
-                    <Input placeholder="The Cozy Corner Café" />
+                    <label className="mb-1.5 block text-sm font-medium text-foreground">Business / Venue Name *</label>
+                    <Input placeholder="The Cozy Corner Café" value={formData.venueName} onChange={(e) => setFormData({ ...formData, venueName: e.target.value })} />
                   </div>
                   <div>
                     <label className="mb-1.5 block text-sm font-medium text-foreground">Venue Address</label>
-                    <Input placeholder="123 Main St, Toronto, ON" />
+                    <Input placeholder="123 Main St, Toronto, ON" value={formData.venueAddress} onChange={(e) => setFormData({ ...formData, venueAddress: e.target.value })} />
                   </div>
                   <div>
                     <label className="mb-1.5 block text-sm font-medium text-foreground">
                       Tell us about your space & preferred schedule
                     </label>
-                    <Textarea placeholder="We have seating for ~30 guests and would love to host on Thursday evenings..." rows={4} />
+                    <Textarea placeholder="We have seating for ~30 guests and would love to host on Thursday evenings..." rows={4} value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
                   </div>
                   <Button
                     className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-display"
                     size="lg"
-                    onClick={() => setSubmitted(true)}
+                    onClick={handleSubmit}
+                    disabled={loading}
                   >
-                    Submit Application
+                    {loading ? "Submitting..." : "Submit Application"}
                   </Button>
                 </CardContent>
               </Card>
