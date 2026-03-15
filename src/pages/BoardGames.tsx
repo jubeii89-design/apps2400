@@ -112,14 +112,14 @@ const BoardGames = () => (
             </Button>
             <Button
               size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-display text-base"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 font-display text-base"
               onClick={() => document.getElementById('game-night-gallery')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Camera className="mr-2 h-5 w-5" /> Game Night Gallery
             </Button>
             <Button
               size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-display text-base"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 font-display text-base"
             >
               <Building2 className="mr-2 h-5 w-5" /> Become a Host
             </Button>
