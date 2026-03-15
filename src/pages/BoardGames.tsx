@@ -107,9 +107,6 @@ const BoardGames = () => (
             you. Hosted by local businesses, powered by play.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-display text-base">
-              <Calendar className="mr-2 h-5 w-5" /> View Upcoming Events
-            </Button>
             <Button
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-display text-base"
@@ -120,6 +117,7 @@ const BoardGames = () => (
             <Button
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-display text-base"
+              onClick={() => window.location.href = '/become-a-host'}
             >
               <Building2 className="mr-2 h-5 w-5" /> Become a Host
             </Button>
