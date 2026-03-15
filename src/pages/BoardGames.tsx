@@ -113,6 +113,13 @@ const BoardGames = () => (
             <Button
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-display text-base"
+              onClick={() => document.getElementById('game-night-gallery')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Camera className="mr-2 h-5 w-5" /> Game Night Gallery
+            </Button>
+            <Button
+              size="lg"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-display text-base"
             >
               <Building2 className="mr-2 h-5 w-5" /> Become a Host
             </Button>
@@ -216,7 +223,7 @@ const BoardGames = () => (
     </section>
 
     {/* Photo Gallery */}
-    <section className="bg-muted py-16">
+    <section id="game-night-gallery" className="bg-muted py-16">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
