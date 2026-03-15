@@ -32,7 +32,7 @@ const benefits = [
   },
   {
     icon: Megaphone,
-    title: "Free Marketing",
+    title: "We market YOU",
     desc: "We promote your venue across our website, social media, and email newsletters at no cost to you.",
   },
   {
