@@ -22,7 +22,7 @@ const Footer = () => (
               <Dice5 className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="font-display text-xl font-bold">
-              APPs<span className="text-primary">2400</span>
+              Strategic <span className="text-primary">Titan's</span>
             </span>
           </Link>
           <p className="text-sm text-muted-foreground">
@@ -79,7 +79,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} APPs2400 Canadian Board Game Company. All rights reserved.
+        © {new Date().getFullYear()} Strategic Titan's Canadian Board Game Company. All rights reserved.
       </div>
     </div>
   </footer>

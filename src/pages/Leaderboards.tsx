@@ -71,7 +71,7 @@ const Leaderboards = () => (
           <Trophy className="mx-auto mb-4 h-12 w-12 text-yellow-300" />
           <h1 className="mb-3 text-4xl font-bold text-white md:text-5xl">Leaderboards</h1>
           <p className="mx-auto max-w-2xl text-lg text-white/80">
-            See who's dominating APPs2400 online games. Climb the ranks and earn your place at the top.
+            See who's dominating Strategic Titan's online games. Climb the ranks and earn your place at the top.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
             <span className="flex items-center gap-2"><Users className="h-5 w-5" /> 2,847 Active Players</span>

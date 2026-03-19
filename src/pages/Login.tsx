@@ -15,7 +15,7 @@ const Login = () => (
               <Dice5 className="h-8 w-8 text-primary-foreground" />
             </div>
             <h1 className="font-display text-2xl font-bold">Welcome Back</h1>
-            <p className="text-sm text-muted-foreground">Sign in to your APPs2400 account</p>
+            <p className="text-sm text-muted-foreground">Sign in to your Strategic Titan's account</p>
           </div>
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <Input placeholder="Email" type="email" required />

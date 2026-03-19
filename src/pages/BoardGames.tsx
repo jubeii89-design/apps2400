@@ -103,7 +103,7 @@ const BoardGames = () => (
           </Badge>
           <h1 className="mb-4 font-display text-5xl font-bold md:text-6xl">Games Night</h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">
-            Bring your team, your friends, or your family — enjoy a night of APPs2400 board games at a local venue near
+            Bring your team, your friends, or your family — enjoy a night of Strategic Titan's board games at a local venue near
             you. Hosted by local businesses, powered by play.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

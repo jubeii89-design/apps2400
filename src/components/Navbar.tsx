@@ -30,7 +30,7 @@ const Navbar = () => {
             <Dice5 className="h-6 w-6 text-primary-foreground" />
           </div>
           <span className="font-display text-xl font-bold text-foreground">
-            APPs<span className="text-primary">2400</span>
+            Strategic <span className="text-primary">Titan's</span>
           </span>
         </Link>
 
