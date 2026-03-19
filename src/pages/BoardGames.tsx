@@ -344,7 +344,7 @@ const BoardGames = () => (
     </section>
 
     {/* CTA */}
-    <section className="bg-primary py-16 text-primary-foreground">
+    <section className="bg-primary py-10 text-primary-foreground">
       <div className="container mx-auto px-4 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="mb-3 font-display text-3xl font-bold">Host a Game Night at Your Business</h2>
