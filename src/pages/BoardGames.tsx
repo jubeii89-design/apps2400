@@ -312,7 +312,7 @@ const BoardGames = () => (
           viewport={{ once: true }}
           className="mb-10 text-center"
         >
-          <h2 className="font-display text-3xl font-bold text-foreground">Our Sponsors &amp; Hosts</h2>
+          <h2 className="font-display text-2xl font-bold text-foreground">Our Sponsors &amp; Hosts</h2>
           <p className="mt-1 text-muted-foreground">
             Local businesses making game nights possible. Want to sponsor?{" "}
             <a href="/partnerships" className="font-semibold text-primary underline-offset-4 hover:underline">
