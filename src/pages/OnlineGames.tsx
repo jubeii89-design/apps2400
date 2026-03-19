@@ -11,7 +11,7 @@ const OnlineGames = () => (
     {/* Hero */}
     <div className="bg-gradient-to-br from-[hsl(217,91%,30%)] to-[hsl(217,91%,50%)] relative overflow-hidden">
       <div className="absolute inset-0 bg-black/30" />
-      <div className="container relative mx-auto px-4 py-16 text-center">
+      <div className="container relative mx-auto px-4 py-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="mb-3 text-4xl font-bold text-white md:text-5xl">
             Online Games for Individuals
