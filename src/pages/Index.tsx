@@ -46,7 +46,7 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80 md:text-xl"
           >
-            APPs2400 is a Canadian Board Game Company dedicated to bringing people together through innovative and exciting board games and online tournaments.
+            Strategic Titan's is a Canadian Board Game Company dedicated to bringing people together through innovative and exciting board games and online tournaments.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ const Index = () => {
       {/* Tabbed Content */}
       <section className="container mx-auto px-4 py-16">
         <h2 className="mb-8 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
-          About APPs2400
+          About Strategic Titan's
         </h2>
         <Tabs defaultValue="mission" className="mx-auto max-w-3xl">
           <TabsList className="mb-6 grid w-full grid-cols-2 md:grid-cols-5">
@@ -114,7 +114,7 @@ const Index = () => {
                   <div className="rounded-xl bg-accent/10 p-3"><Trophy className="h-6 w-6 text-accent" /></div>
                   <div>
                     <h3 className="mb-2 font-display text-xl font-semibold">Tournaments</h3>
-                    <p className="text-muted-foreground">Join exciting online and in-person tournaments! Compete against players worldwide in Pokerstr8ts and other APPs2400 games. Visit centriko.com to enter events with your event code.</p>
+                    <p className="text-muted-foreground">Join exciting online and in-person tournaments! Compete against players worldwide in Pokerstr8ts and other Strategic Titan's games. Visit centriko.com to enter events with your event code.</p>
                   </div>
                 </div>
               </CardContent>

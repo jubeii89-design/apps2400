@@ -71,7 +71,7 @@ const Download = () => {
                     <Heart className="h-6 w-6 text-secondary" />
                   </div>
                   <div>
-                    <h2 className="font-display text-2xl font-bold text-foreground">Support APPs2400</h2>
+                    <h2 className="font-display text-2xl font-bold text-foreground">Support Strategic Titan's</h2>
                     <p className="text-sm text-muted-foreground">
                       Your donation supports game development and charitable tournaments.
                     </p>
@@ -165,7 +165,7 @@ const Download = () => {
                       <ChevronDown className="h-4 w-4" />
                     </CollapsibleTrigger>
                     <CollapsibleContent className="px-4 pt-3 text-sm text-muted-foreground">
-                      <p>For bank transfers, please contact us at <strong>donate@apps2400.com</strong> and we'll provide the relevant banking details for your region.</p>
+                      <p>For bank transfers, please contact us at <strong>donate@strategictitans.com</strong> and we'll provide the relevant banking details for your region.</p>
                     </CollapsibleContent>
                   </Collapsible>
 
@@ -177,7 +177,7 @@ const Download = () => {
                       <ChevronDown className="h-4 w-4" />
                     </CollapsibleTrigger>
                     <CollapsibleContent className="px-4 pt-3 text-sm text-muted-foreground">
-                      <p>Donations to APPs2400's charitable programs may be eligible for tax deductions in Canada. A tax receipt will be issued for donations over $20 CAD.</p>
+                      <p>Donations to Strategic Titan's's charitable programs may be eligible for tax deductions in Canada. A tax receipt will be issued for donations over $20 CAD.</p>
                     </CollapsibleContent>
                   </Collapsible>
                 </div>
@@ -210,7 +210,7 @@ const Download = () => {
                   We're a community-driven board game company
                 </h3>
                 <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  APPs2400 is a Canadian company dedicated to bringing people together through innovative board games and online tournaments. Every donation directly supports:
+                  Strategic Titan's is a Canadian company dedicated to bringing people together through innovative board games and online tournaments. Every donation directly supports:
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {[
@@ -234,7 +234,7 @@ const Download = () => {
                   Your support helps us keep creating
                 </h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  From developing new games like Pokerstr8ts to organizing charity tournaments, your generosity makes a real difference. Thank you for being part of the APPs2400 community!
+                  From developing new games like Pokerstr8ts to organizing charity tournaments, your generosity makes a real difference. Thank you for being part of the Strategic Titan's community!
                 </p>
               </CardContent>
             </Card>

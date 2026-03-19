@@ -79,7 +79,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} APPs2400 Canadian Board Game Company. All rights reserved.
+        © {new Date().getFullYear()} Strategic Titan's Canadian Board Game Company. All rights reserved.
       </div>
     </div>
   </footer>

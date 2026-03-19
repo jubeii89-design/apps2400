@@ -15,7 +15,7 @@ const Register = () => (
               <Dice5 className="h-8 w-8 text-primary-foreground" />
             </div>
             <h1 className="font-display text-2xl font-bold">Create Account</h1>
-            <p className="text-sm text-muted-foreground">Join the APPs2400 community</p>
+            <p className="text-sm text-muted-foreground">Join the Strategic Titan's community</p>
           </div>
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <Input placeholder="Full Name" required />

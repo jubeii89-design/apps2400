@@ -17,7 +17,7 @@ const OnlineGames = () => (
             Online Games for Individuals
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80">
-            Play APPs2400 games online against players around the world. No downloads — just open your browser and play.
+            Play Strategic Titan's games online against players around the world. No downloads — just open your browser and play.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
             <span className="flex items-center gap-2"><Gamepad2 className="h-5 w-5" /> Play Anytime</span>
@@ -74,7 +74,7 @@ const OnlineGames = () => (
       <div className="mt-14 rounded-2xl border border-white/10 bg-[hsl(220,25%,12%)] p-10 text-center">
         <h2 className="mb-3 text-2xl font-bold text-white/90">Ready to Play?</h2>
         <p className="mb-6 text-white/60">
-          Visit centriko.com to start playing Pokerstr8ts and other APPs2400 games online.
+          Visit centriko.com to start playing Pokerstr8ts and other Strategic Titan's games online.
         </p>
         <a href="https://centriko.com" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="rounded-full bg-primary text-primary-foreground font-bold px-8">

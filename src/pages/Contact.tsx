@@ -18,7 +18,7 @@ const Contact = () => {
 
       <div className="grid gap-8 md:grid-cols-3">
         {[
-          { icon: Mail, title: "Email", info: "info@apps2400.com" },
+          { icon: Mail, title: "Email", info: "info@strategictitans.com" },
           { icon: Phone, title: "Phone", info: "+1 (800) 555-2400" },
           { icon: MapPin, title: "Location", info: "Canada" },
         ].map(({ icon: Icon, title, info }) => (
