@@ -21,7 +21,7 @@ const Download = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Top banner */}
-      <section className="bg-primary px-4 py-12 text-primary-foreground">
+      <section className="bg-primary px-4 py-8 text-primary-foreground">
         <div className="container mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
