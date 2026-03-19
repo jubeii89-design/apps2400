@@ -10,10 +10,10 @@ const topLinks = [
   { label: "Online Games", path: "/online-games" },
   { label: "Tournaments", path: "/tournaments" },
   { label: "Reserve A Game", path: "/reserve" },
+  { label: "Buy Games", path: "/buy-games" },
 ];
 
 const bottomLinks = [
-  { label: "Buy Games", path: "/buy-games" },
   { label: "Partnerships", path: "/partnerships" },
   { label: "Charity", path: "/charity" },
   { label: "Contact", path: "/contact" },
