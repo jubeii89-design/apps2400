@@ -66,10 +66,10 @@ const Leaderboards = () => (
     {/* Hero */}
     <div className="bg-gradient-to-br from-yellow-600/80 to-amber-800/80 relative overflow-hidden">
       <div className="absolute inset-0 bg-black/40" />
-      <div className="container relative mx-auto px-4 py-16 text-center">
+      <div className="container relative mx-auto px-4 py-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <Trophy className="mx-auto mb-4 h-12 w-12 text-yellow-300" />
-          <h1 className="mb-3 text-4xl font-bold text-white md:text-5xl">Leaderboards</h1>
+          <h1 className="mb-3 text-2xl font-bold text-white md:text-3xl">Leaderboards</h1>
           <p className="mx-auto max-w-2xl text-lg text-white/80">
             See who's dominating Strategic Titan's online games. Climb the ranks and earn your place at the top.
           </p>
@@ -100,7 +100,7 @@ const Leaderboards = () => (
             >
               <Card className="border-yellow-500/20 bg-gradient-to-b from-[hsl(220,25%,15%)] to-[hsl(220,25%,10%)] text-center">
                 <CardContent className={`flex ${heights[i]} flex-col items-center justify-center p-6`}>
-                  <div className="mb-2 text-4xl">{p.avatar}</div>
+                  <div className="mb-2 text-2xl">{p.avatar}</div>
                   <RankIcon rank={p.rank} />
                   <p className="mt-2 font-bold text-white/90">{p.name}</p>
                   <p className="text-2xl font-bold text-primary">{p.score.toLocaleString()}</p>

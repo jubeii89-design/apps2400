@@ -60,7 +60,7 @@ const Download = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Left column — Donation */}
           <div className="lg:col-span-2">

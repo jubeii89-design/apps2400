@@ -40,8 +40,8 @@ const BuyGames = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8 flex items-center justify-between">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <h1 className="font-display text-4xl font-bold">Buy Games</h1>
-          <p className="text-lg text-muted-foreground">Shop our collection of board games.</p>
+          <h1 className="font-display text-2xl font-bold">Buy Games</h1>
+          <p className="text-sm text-muted-foreground">Shop our collection of board games.</p>
         </motion.div>
 
         <Sheet>

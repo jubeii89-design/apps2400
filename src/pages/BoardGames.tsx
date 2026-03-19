@@ -90,7 +90,7 @@ const tierColors: Record<string, string> = {
 const BoardGames = () => (
   <div className="min-h-screen bg-background">
     {/* Hero */}
-    <section className="relative overflow-hidden bg-primary py-12 text-primary-foreground">
+    <section className="relative overflow-hidden bg-primary py-8 text-primary-foreground">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-accent" />
         <div className="absolute bottom-10 right-20 h-48 w-48 rounded-full bg-secondary" />
@@ -101,8 +101,8 @@ const BoardGames = () => (
           <Badge className="mb-4 bg-accent text-accent-foreground px-4 py-1.5 text-sm font-semibold">
             <PartyPopper className="mr-1.5 h-4 w-4" /> Now Hosting Weekly Events
           </Badge>
-          <h1 className="mb-4 font-display text-5xl font-bold md:text-6xl">Games Night</h1>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">
+          <h1 className="mb-4 font-display text-2xl font-bold md:text-4xl">Games Night</h1>
+          <p className="mx-auto mb-5 max-w-xl text-sm text-primary-foreground/80">
             Bring your team, your friends, or your family — enjoy a night of Strategic Titan's board games at a local venue near
             you. Hosted by local businesses, powered by play.
           </p>
@@ -149,11 +149,11 @@ const BoardGames = () => (
     </section>
 
     {/* Upcoming Events */}
-    <section className="container mx-auto px-4 py-16">
+    <section className="container mx-auto px-4 py-10">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <h2 className="font-display text-3xl font-bold text-foreground">Upcoming Game Nights</h2>
+            <h2 className="font-display text-2xl font-bold text-foreground">Upcoming Game Nights</h2>
             <p className="mt-1 text-muted-foreground">Find a game night near you and reserve your spot.</p>
           </div>
         </div>
@@ -229,7 +229,7 @@ const BoardGames = () => (
           viewport={{ once: true }}
           className="mb-8 text-center"
         >
-          <h2 className="font-display text-3xl font-bold text-foreground">
+          <h2 className="font-display text-2xl font-bold text-foreground">
             <Camera className="mr-2 inline h-8 w-8 text-primary" />
             Game Night Gallery
           </h2>
@@ -262,9 +262,9 @@ const BoardGames = () => (
     </section>
 
     {/* Featured Games */}
-    <section className="container mx-auto px-4 py-16">
+    <section className="container mx-auto px-4 py-10">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-        <h2 className="mb-2 font-display text-3xl font-bold text-foreground">Games We Play</h2>
+        <h2 className="mb-2 font-display text-2xl font-bold text-foreground">Games We Play</h2>
         <p className="mb-8 text-muted-foreground">Our curated collection of board games available at every game night.</p>
       </motion.div>
 

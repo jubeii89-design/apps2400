@@ -13,10 +13,10 @@ const faqs = [
 ];
 
 const FAQ = () => (
-  <div className="container mx-auto px-4 py-12">
+  <div className="container mx-auto px-4 py-8">
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-      <h1 className="mb-2 font-display text-4xl font-bold">Frequently Asked Questions</h1>
-      <p className="mb-8 text-lg text-muted-foreground">Find answers to common questions about Strategic Titan's.</p>
+      <h1 className="mb-2 font-display text-2xl font-bold">Frequently Asked Questions</h1>
+      <p className="mb-5 text-sm text-muted-foreground">Find answers to common questions about Strategic Titan's.</p>
     </motion.div>
 
     <div className="mx-auto max-w-2xl">

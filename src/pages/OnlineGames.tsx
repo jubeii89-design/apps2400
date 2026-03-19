@@ -13,10 +13,10 @@ const OnlineGames = () => (
       <div className="absolute inset-0 bg-black/30" />
       <div className="container relative mx-auto px-4 py-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <h1 className="mb-3 text-4xl font-bold text-white md:text-5xl">
+          <h1 className="mb-3 text-2xl font-bold text-white md:text-3xl">
             Online Games for Individuals
           </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80">
+          <p className="mx-auto mb-5 max-w-xl text-sm text-white/80">
             Play Strategic Titan's games online against players around the world. No downloads — just open your browser and play.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
@@ -30,7 +30,7 @@ const OnlineGames = () => (
 
     {/* Game Cards Grid */}
     <div className="container mx-auto px-4 py-8">
-      <h2 className="mb-8 text-2xl font-bold text-white/90">Available Games</h2>
+      <h2 className="mb-5 text-2xl font-bold text-white/90">Available Games</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {onlineGames.map((game, i) => (
           <motion.div
