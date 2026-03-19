@@ -221,7 +221,7 @@ const BoardGames = () => (
     </section>
 
     {/* Photo Gallery */}
-    <section id="game-night-gallery" className="bg-muted py-16">
+    <section id="game-night-gallery" className="bg-muted py-10">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
