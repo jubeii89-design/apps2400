@@ -90,7 +90,7 @@ const tierColors: Record<string, string> = {
 const BoardGames = () => (
   <div className="min-h-screen bg-background">
     {/* Hero */}
-    <section className="relative overflow-hidden bg-primary py-20 text-primary-foreground">
+    <section className="relative overflow-hidden bg-primary py-12 text-primary-foreground">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-accent" />
         <div className="absolute bottom-10 right-20 h-48 w-48 rounded-full bg-secondary" />
