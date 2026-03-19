@@ -29,7 +29,7 @@ const Download = () => {
             transition={{ duration: 0.5 }}
           >
             <DownloadIcon className="mx-auto mb-4 h-12 w-12" />
-            <h1 className="mb-3 font-display text-4xl font-bold md:text-5xl">
+            <h1 className="mb-2 font-display text-2xl font-bold md:text-3xl">
               Download Pokerstr8ts
             </h1>
             <p className="mx-auto max-w-xl text-primary-foreground/80">

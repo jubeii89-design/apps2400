@@ -83,7 +83,7 @@ const Leaderboards = () => (
     </div>
 
     {/* Content */}
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       {/* Top 3 Podium */}
       <div className="mb-12 grid gap-4 md:grid-cols-3">
         {mockPlayers.slice(0, 3).map((player, i) => {

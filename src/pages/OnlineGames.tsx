@@ -29,7 +29,7 @@ const OnlineGames = () => (
     </div>
 
     {/* Game Cards Grid */}
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       <h2 className="mb-8 text-2xl font-bold text-white/90">Available Games</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {onlineGames.map((game, i) => (

@@ -347,7 +347,7 @@ const BoardGames = () => (
     <section className="bg-primary py-10 text-primary-foreground">
       <div className="container mx-auto px-4 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="mb-3 font-display text-3xl font-bold">Host a Game Night at Your Business</h2>
+          <h2 className="mb-2 font-display text-2xl font-bold">Host a Game Night at Your Business</h2>
           <p className="mx-auto mb-6 max-w-xl text-primary-foreground/80">
             We provide the games, the structure, and the fun — you provide the venue. It's the perfect way to drive
             foot traffic and build community.
