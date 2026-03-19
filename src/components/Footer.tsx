@@ -22,7 +22,7 @@ const Footer = () => (
               <Dice5 className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="font-display text-xl font-bold">
-              APPs<span className="text-primary">2400</span>
+              Strategic <span className="text-primary">Titan's</span>
             </span>
           </Link>
           <p className="text-sm text-muted-foreground">
