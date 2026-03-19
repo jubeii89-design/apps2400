@@ -16,10 +16,10 @@ const Partnerships = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-        <h1 className="mb-2 font-display text-4xl font-bold">Small Business Partnerships</h1>
-        <p className="mb-8 text-lg text-muted-foreground">Partner with Strategic Titan's to grow your business through the power of play.</p>
+        <h1 className="mb-2 font-display text-2xl font-bold">Small Business Partnerships</h1>
+        <p className="mb-5 text-sm text-muted-foreground">Partner with Strategic Titan's to grow your business through the power of play.</p>
       </motion.div>
 
       <div className="mb-12 grid gap-6 md:grid-cols-3">

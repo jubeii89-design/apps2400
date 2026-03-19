@@ -10,13 +10,13 @@ const upcomingTournaments = [
 ];
 
 const Tournaments = () => (
-  <div className="container mx-auto px-4 py-12">
+  <div className="container mx-auto px-4 py-8">
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-      <h1 className="mb-2 font-display text-4xl font-bold">Online Tournaments</h1>
-      <p className="mb-8 text-lg text-muted-foreground">Compete in exciting tournaments and win prizes!</p>
+      <h1 className="mb-2 font-display text-2xl font-bold">Online Tournaments</h1>
+      <p className="mb-5 text-sm text-muted-foreground">Compete in exciting tournaments and win prizes!</p>
     </motion.div>
 
-    <div className="mb-10 rounded-2xl bg-primary p-8 text-primary-foreground">
+    <div className="mb-8 rounded-xl bg-primary p-5 text-primary-foreground">
       <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
         <Trophy className="h-12 w-12 shrink-0" />
         <div className="flex-1">

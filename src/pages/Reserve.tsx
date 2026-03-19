@@ -14,10 +14,10 @@ const Reserve = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-        <h1 className="mb-2 font-display text-4xl font-bold">Reserve A Game</h1>
-        <p className="mb-8 text-lg text-muted-foreground">Reserve a board game for your next event or game night.</p>
+        <h1 className="mb-2 font-display text-2xl font-bold">Reserve A Game</h1>
+        <p className="mb-5 text-sm text-muted-foreground">Reserve a board game for your next event or game night.</p>
       </motion.div>
 
       <div className="mx-auto max-w-lg rounded-2xl bg-muted p-8">

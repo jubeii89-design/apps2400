@@ -10,10 +10,10 @@ const Charity = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-        <h1 className="mb-2 font-display text-4xl font-bold">Charity Fund Raising Partnerships</h1>
-        <p className="mb-8 text-lg text-muted-foreground">Use the power of board games to raise funds for causes you care about.</p>
+        <h1 className="mb-2 font-display text-2xl font-bold">Charity Fund Raising Partnerships</h1>
+        <p className="mb-5 text-sm text-muted-foreground">Use the power of board games to raise funds for causes you care about.</p>
       </motion.div>
 
       <div className="mb-12 grid gap-6 md:grid-cols-3">

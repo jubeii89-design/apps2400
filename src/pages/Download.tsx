@@ -21,7 +21,7 @@ const Download = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Top banner */}
-      <section className="bg-primary px-4 py-12 text-primary-foreground">
+      <section className="bg-primary px-4 py-8 text-primary-foreground">
         <div className="container mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ const Download = () => {
             transition={{ duration: 0.5 }}
           >
             <DownloadIcon className="mx-auto mb-4 h-12 w-12" />
-            <h1 className="mb-3 font-display text-4xl font-bold md:text-5xl">
+            <h1 className="mb-2 font-display text-2xl font-bold md:text-3xl">
               Download Pokerstr8ts
             </h1>
             <p className="mx-auto max-w-xl text-primary-foreground/80">
@@ -60,7 +60,7 @@ const Download = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Left column — Donation */}
           <div className="lg:col-span-2">
