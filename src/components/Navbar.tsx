@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Dice5 } from "lucide-react";
+import { Menu, X, Dice5, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -23,7 +23,11 @@ const bottomLinks = [
 
 const allLinks = [...topLinks, ...bottomLinks];
 
-const Navbar = () => {
+interface NavbarProps {
+  onOpenTerminal?: () => void;
+}
+
+const Navbar = ({ onOpenTerminal }: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -57,6 +61,16 @@ const Navbar = () => {
           </div>
 
           <div className="hidden items-center gap-1.5 lg:flex">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-7 w-7 px-0 text-muted-foreground hover:text-foreground"
+              onClick={onOpenTerminal}
+              title="Open Terminal (Ctrl+`)"
+              aria-label="Open Terminal"
+            >
+              <Terminal className="h-3.5 w-3.5" />
+            </Button>
             <Link to="/login">
               <Button variant="ghost" size="sm" className="h-7 text-xs px-2">Login</Button>
             </Link>
@@ -112,6 +126,14 @@ const Navbar = () => {
                   <Button className="w-full h-7 text-xs">Register</Button>
                 </Link>
               </div>
+              <Button
+                variant="outline"
+                className="mt-1 h-7 w-full gap-1.5 text-xs"
+                onClick={() => { setOpen(false); onOpenTerminal?.(); }}
+              >
+                <Terminal className="h-3.5 w-3.5" />
+                Open Terminal
+              </Button>
             </div>
           </motion.div>
         )}
