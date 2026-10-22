@@ -8,7 +8,7 @@
   :root {
     --text: #fff;
     --accent: #ff4d4d;
-    --panel: rgba(0, 0, 0, 0.6);
+    --panel: rgba(0, 0, 0, 0.75);
     --serif: "Book Antiqua", Palatino, "Palatino Linotype", serif;
   }
   * { box-sizing: border-box; }
@@ -21,13 +21,23 @@
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    background: #fafad2 url("/pkt/christmas4.jpg") center / cover no-repeat fixed;
+    background: #fafad2;
+  }
+  /* Fixed layer instead of background-attachment: fixed, which iOS Safari ignores */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url("/pkt/christmas4.jpg") center / cover no-repeat;
   }
   main {
     max-width: 640px;
     margin: 0 auto;
     padding: 24px;
     background: var(--panel);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     border-radius: 12px;
   }
   h1 { margin: 0 0 16px; font-size: 2rem; line-height: 1.2; }
