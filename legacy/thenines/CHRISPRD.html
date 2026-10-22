@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bubble Challenge &ndash; Christmas</title>
+<style>
+  :root {
+    --text: #fff;
+    --accent: #ff4d4d;
+    --panel: rgba(0, 0, 0, 0.75);
+    --serif: "Book Antiqua", Palatino, "Palatino Linotype", serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    background: #fafad2;
+  }
+  /* Fixed layer instead of background-attachment: fixed, which iOS Safari ignores */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url("/pkt/christmas4.jpg") center / cover no-repeat;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--panel);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+  }
+  h1 { margin: 0 0 16px; font-size: 2rem; line-height: 1.2; }
+  h2 { margin: 24px 0 8px; font-size: 1.3rem; }
+  p { margin: 0 0 12px; }
+  a { color: var(--text); }
+  .lead { font-size: 1.4rem; font-weight: bold; margin-bottom: 4px; }
+  .note { font-weight: bold; font-style: italic; }
+  .red { color: var(--accent); font-weight: bold; }
+  .shapes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+    padding: 0;
+    margin: 8px 0 0;
+    list-style: none;
+  }
+  .demo {
+    margin: 24px 0;
+    padding: 12px;
+    border: 1px dashed var(--accent);
+    border-radius: 8px;
+  }
+  .demo code { font-size: 1.1rem; color: var(--text); }
+  form { display: grid; gap: 12px; max-width: 360px; margin: 0 auto; text-align: left; }
+  label { display: grid; grid-template-columns: 9em 1fr; align-items: center; gap: 8px; }
+  label span::after { content: " *"; color: var(--accent); }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 6px 8px;
+    font: inherit;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  .btn {
+    justify-self: center;
+    width: 10em;
+    padding: 8px;
+    font: inherit;
+    font-weight: bold;
+    color: #fff;
+    background: #b30000;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .btn:hover, .btn:focus { background: #d40000; }
+  .small { font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Bubble Challenge<br>Christmas Version</h1>
+
+  <p class="lead">35 Bubbles</p>
+  <p>It has 15 large bubbles and 20 small ones. The bubble shapes vary in size from 3 to 9.
+     There are 87 unique shapes in the puzzle.</p>
+  <p class="note">It is important to know the shapes. Review them before you start:</p>
+  <ul class="shapes">
+    <li><a href="http://centriko.com/thenines/shapes1to24.jpg" target="_blank" rel="noopener">Shapes 1&ndash;24</a></li>
+    <li><a href="http://centriko.com/thenines/shapes25to48.jpg" target="_blank" rel="noopener">Shapes 25&ndash;48</a></li>
+    <li><a href="http://centriko.com/thenines/shapes49to72.jpg" target="_blank" rel="noopener">Shapes 49&ndash;72</a></li>
+    <li><a href="http://centriko.com/thenines/shapes73to87.jpg" target="_blank" rel="noopener">Shapes 73&ndash;87</a></li>
+  </ul>
+
+  <h2>The object of the challenge</h2>
+  <p>Initially, 10 of the bubbles are filled in. They are <span class="red">RED</span> and cannot be changed.</p>
+  <p>Fill the remaining bubbles with the numbers 0 to 9. You score points for each shape
+     that contains no duplicate numbers. The larger the shape, the higher the points.</p>
+  <p>Score high enough to unlock the art and poetry.</p>
+
+  <div class="demo">
+    <p><span class="red">Demo Puzzle ID:</span> <code>STOCF00174</code>
+       &nbsp; <span class="red">Password:</span> <code>0601684273</code></p>
+    <p class="small">Games played with this ID and password are strictly for practice.</p>
+  </div>
+
+  <p class="small">Fill in every field marked <span class="red">*</span> using the Puzzle ID and Password
+     from the sticker you received, then press <b>PLAY</b>.
+     Your first name, last name and Player ID Code together must be unique &mdash; they identify
+     the monthly winners. <b>Remember what you enter.</b></p>
+
+  <form action="/thenines/CHRISPRD.pgm" method="POST">
+    <label><span>Puzzle ID</span>
+      <input type="text" name="Hpuzzleid" size="10" required autocomplete="off"></label>
+    <label><span>Password</span>
+      <input type="password" name="Hpassword" size="10" required autocomplete="off"></label>
+    <label><span>First Name</span>
+      <input type="text" name="Hfirstn" size="10" required autocomplete="given-name"></label>
+    <label><span>Last Name</span>
+      <input type="text" name="Hlastn" size="10" required autocomplete="family-name"></label>
+    <label><span>Player ID Code</span>
+      <input type="text" name="Hpidcode" size="4" value="0000" required></label>
+    <input class="btn" type="submit" name="Hbutton" value="PLAY">
+  </form>
+</main>
+<!-- HtmlMbr=CHRISPRD -->
+</body>
+</html>
